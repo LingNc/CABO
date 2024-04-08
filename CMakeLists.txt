@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 3.13.4)
+
+project(KABO)
+
+add_executable(${CMAKE_PROJECT_NAME} main.cpp)

@@ -1,0 +1,7 @@
+[
+{
+  "directory": "/root/Desktop/KABO/build",
+  "command": "/usr/bin/aarch64-linux-gnu-g++    -g   -o CMakeFiles/KABO.dir/main.cpp.o -c /root/Desktop/KABO/main.cpp",
+  "file": "/root/Desktop/KABO/main.cpp"
+}
+]

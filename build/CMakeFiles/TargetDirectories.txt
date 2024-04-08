@@ -1,0 +1,3 @@
+/root/Desktop/KABO/build/CMakeFiles/rebuild_cache.dir
+/root/Desktop/KABO/build/CMakeFiles/KABO.dir
+/root/Desktop/KABO/build/CMakeFiles/edit_cache.dir
