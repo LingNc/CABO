@@ -6,7 +6,11 @@
 
 #IncludeRegexTransform: 
 
-/root/Desktop/KABO/main.cpp
+../include/0.h
+
+/root/Desktop/KABO/src/main.cpp
 iostream
 -
+0.h
+/root/Desktop/KABO/src/0.h
 

@@ -1,5 +1,13 @@
 cmake_minimum_required(VERSION 3.13.4)
 
-project(KABO)
+project(KABO VERSION 0.0 LANGUAGES C CXX)
+set(CMAKE_C_STANDARD 99)
+set(CMAKE_C_STANDARD 11)
 
-add_executable(${CMAKE_PROJECT_NAME} main.cpp)
+include_directories(include)
+#添加目标
+add_executable(${CMAKE_PROJECT_NAME})
+#CONFIGURE_DEPENDS自动更新变量
+file(GLOB SRC CMAKE_CONFIGURE_DEPENDS src/*.cpp)
+#添加源文件到目标
+target_sources(${CMAKE_PROJECT_NAME} PUBLIC ${SRC})

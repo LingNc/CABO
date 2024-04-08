@@ -1,7 +1,7 @@
 [
 {
   "directory": "/root/Desktop/KABO/build",
-  "command": "/usr/bin/aarch64-linux-gnu-g++    -g   -o CMakeFiles/KABO.dir/main.cpp.o -c /root/Desktop/KABO/main.cpp",
-  "file": "/root/Desktop/KABO/main.cpp"
+  "command": "/usr/bin/aarch64-linux-gnu-g++   -I/root/Desktop/KABO/include  -g   -o CMakeFiles/KABO.dir/src/main.cpp.o -c /root/Desktop/KABO/src/main.cpp",
+  "file": "/root/Desktop/KABO/src/main.cpp"
 }
 ]

@@ -1,0 +1,7 @@
+{
+    "files.associations": {
+        "*.tex": "latex",
+        "*.txt": "cmake",
+        "ostream": "cpp"
+    }
+}

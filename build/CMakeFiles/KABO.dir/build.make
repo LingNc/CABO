@@ -57,27 +57,27 @@ include CMakeFiles/KABO.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/KABO.dir/flags.make
 
-CMakeFiles/KABO.dir/main.cpp.o: CMakeFiles/KABO.dir/flags.make
-CMakeFiles/KABO.dir/main.cpp.o: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/Desktop/KABO/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/KABO.dir/main.cpp.o"
-	/usr/bin/aarch64-linux-gnu-g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/KABO.dir/main.cpp.o -c /root/Desktop/KABO/main.cpp
+CMakeFiles/KABO.dir/src/main.cpp.o: CMakeFiles/KABO.dir/flags.make
+CMakeFiles/KABO.dir/src/main.cpp.o: ../src/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/Desktop/KABO/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/KABO.dir/src/main.cpp.o"
+	/usr/bin/aarch64-linux-gnu-g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/KABO.dir/src/main.cpp.o -c /root/Desktop/KABO/src/main.cpp
 
-CMakeFiles/KABO.dir/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/KABO.dir/main.cpp.i"
-	/usr/bin/aarch64-linux-gnu-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/Desktop/KABO/main.cpp > CMakeFiles/KABO.dir/main.cpp.i
+CMakeFiles/KABO.dir/src/main.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/KABO.dir/src/main.cpp.i"
+	/usr/bin/aarch64-linux-gnu-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/Desktop/KABO/src/main.cpp > CMakeFiles/KABO.dir/src/main.cpp.i
 
-CMakeFiles/KABO.dir/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/KABO.dir/main.cpp.s"
-	/usr/bin/aarch64-linux-gnu-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/Desktop/KABO/main.cpp -o CMakeFiles/KABO.dir/main.cpp.s
+CMakeFiles/KABO.dir/src/main.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/KABO.dir/src/main.cpp.s"
+	/usr/bin/aarch64-linux-gnu-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/Desktop/KABO/src/main.cpp -o CMakeFiles/KABO.dir/src/main.cpp.s
 
 # Object files for target KABO
 KABO_OBJECTS = \
-"CMakeFiles/KABO.dir/main.cpp.o"
+"CMakeFiles/KABO.dir/src/main.cpp.o"
 
 # External object files for target KABO
 KABO_EXTERNAL_OBJECTS =
 
-KABO: CMakeFiles/KABO.dir/main.cpp.o
+KABO: CMakeFiles/KABO.dir/src/main.cpp.o
 KABO: CMakeFiles/KABO.dir/build.make
 KABO: CMakeFiles/KABO.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/root/Desktop/KABO/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable KABO"
