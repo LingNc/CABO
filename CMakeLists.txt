@@ -3,7 +3,7 @@ cmake_minimum_required(VERSION 3.13.4)
 project(KABO VERSION 0.0 LANGUAGES C CXX)
 set(CMAKE_C_STANDARD 99)
 set(CMAKE_C_STANDARD 11)
-
+set(CMAKE_PROJECT_NAME KABO)
 include_directories(include)
 #添加目标
 add_executable(${CMAKE_PROJECT_NAME})
