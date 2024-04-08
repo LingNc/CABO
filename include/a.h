@@ -2,5 +2,4 @@
 #define _H
 
 int sqrt(int x);
-
 #endif

@@ -107,6 +107,7 @@ preinstall/fast:
 
 # clear depends
 depend:
+	$(CMAKE_COMMAND) -P /root/Desktop/KABO/build/CMakeFiles/VerifyGlobs.cmake
 	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
@@ -122,6 +123,33 @@ KABO: cmake_check_build_system
 KABO/fast:
 	$(MAKE) -f CMakeFiles/KABO.dir/build.make CMakeFiles/KABO.dir/build
 .PHONY : KABO/fast
+
+src/a.o: src/a.cpp.o
+
+.PHONY : src/a.o
+
+# target to build an object file
+src/a.cpp.o:
+	$(MAKE) -f CMakeFiles/KABO.dir/build.make CMakeFiles/KABO.dir/src/a.cpp.o
+.PHONY : src/a.cpp.o
+
+src/a.i: src/a.cpp.i
+
+.PHONY : src/a.i
+
+# target to preprocess a source file
+src/a.cpp.i:
+	$(MAKE) -f CMakeFiles/KABO.dir/build.make CMakeFiles/KABO.dir/src/a.cpp.i
+.PHONY : src/a.cpp.i
+
+src/a.s: src/a.cpp.s
+
+.PHONY : src/a.s
+
+# target to generate assembly for a file
+src/a.cpp.s:
+	$(MAKE) -f CMakeFiles/KABO.dir/build.make CMakeFiles/KABO.dir/src/a.cpp.s
+.PHONY : src/a.cpp.s
 
 src/main.o: src/main.cpp.o
 
@@ -159,6 +187,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... KABO"
 	@echo "... edit_cache"
+	@echo "... src/a.o"
+	@echo "... src/a.i"
+	@echo "... src/a.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
@@ -173,6 +204,7 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
+	$(CMAKE_COMMAND) -P /root/Desktop/KABO/build/CMakeFiles/VerifyGlobs.cmake
 	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

@@ -1,1 +1,1 @@
-/usr/bin/aarch64-linux-gnu-g++  -g   CMakeFiles/KABO.dir/src/main.cpp.o  -o KABO 
+/usr/bin/aarch64-linux-gnu-g++  -g   CMakeFiles/KABO.dir/src/a.cpp.o CMakeFiles/KABO.dir/src/main.cpp.o  -o KABO 

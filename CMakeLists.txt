@@ -8,6 +8,6 @@ include_directories(include)
 #添加目标
 add_executable(${CMAKE_PROJECT_NAME})
 #CONFIGURE_DEPENDS自动更新变量
-file(GLOB SRC CMAKE_CONFIGURE_DEPENDS src/*.cpp)
+file(GLOB SRC CONFIGURE_DEPENDS src/*.cpp)
 #添加源文件到目标
 target_sources(${CMAKE_PROJECT_NAME} PUBLIC ${SRC})

@@ -1,4 +1,5 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/KABO.dir/src/a.cpp.o"
   "CMakeFiles/KABO.dir/src/main.cpp.o"
   "KABO.pdb"
   "KABO"
