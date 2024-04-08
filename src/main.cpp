@@ -1,8 +1,6 @@
 #include<iostream>
-#include"a.h"
+#include"player.h"
 int main(){
     int a;
-    std::cin>>a;
-    std::cout<<sqrt(a)<<std::endl;
     return 0;
 }
