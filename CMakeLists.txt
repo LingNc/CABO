@@ -1,9 +1,12 @@
 cmake_minimum_required(VERSION 3.13.4)
-
-project(KABO VERSION 0.0 LANGUAGES C CXX)
+#配置项目名称
+set(CMAKE_PROJECT_NAME CABO)
+#构建项目
+project(${CMAKE_PROJECT_NAME} VERSION 0.0 LANGUAGES C CXX)
+#设置版本
 set(CMAKE_C_STANDARD 99)
 set(CMAKE_C_STANDARD 11)
-set(CMAKE_PROJECT_NAME KABO)
+
 include_directories(include)
 #添加目标
 add_executable(${CMAKE_PROJECT_NAME})
