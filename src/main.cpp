@@ -1,5 +1,5 @@
 #include<iostream>
-#include"player.h"
+#include"Player.h"
 int main(){
     int a;
     return 0;

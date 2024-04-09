@@ -1,16 +1,16 @@
-#ifndef _card_H
-#define _card_H
+#ifndef _Card_H
+#define _Card_H
 
 #include<string>
 
-class card{
+class Card{
 public:
-    card(int x);
+    Card(){};
+    Card(int x);
     void skill();
 private:
     int num;
     std::string data;
-
     void flip();
     void peek();
     void spy();
