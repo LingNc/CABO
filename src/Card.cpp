@@ -16,4 +16,10 @@ void Card::skill(){
         spy();
     else if(data=="SWAP")
         swap();
+    else
+        num();
+}
+
+std::string Card::num(){
+    return data;
 }
