@@ -5,7 +5,6 @@
 #include<string>
 class Card{
 public:
-    Card(){};
     //初始化构造函数
     Card(int x);
     //发动该牌技能

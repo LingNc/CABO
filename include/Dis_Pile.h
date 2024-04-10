@@ -1,10 +1,20 @@
 #ifndef _Dis_Pile_H
 #define _Dis_Pile_H
 
+#include<stack>
+#include"Card.h"
+
 class Dis_Pile{
 public:
-    
+    //入牌
+    void Cardin(Card dis_card);
+    //摸牌
+    Card draw();
+    //构造函数
+    Dis_Pile():temp_card(0) {}
 private:
-    
+    std::stack<Card> dis_card_deck;
+    Card temp_card;
+
 };
 #endif

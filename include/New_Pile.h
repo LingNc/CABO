@@ -12,6 +12,9 @@ public:
     int size();
     //摸出一张顶部的牌
     Card draw();
+
+    //构造函数
+    New_Pile();
 private:
     //洗牌算法
     void Shuffle();
