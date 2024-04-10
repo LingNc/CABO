@@ -10,6 +10,8 @@ public:
     void Cardin(Card dis_card);
     //摸牌
     Card draw();
+    //显示顶部牌
+    const Card &top();
     //构造函数
     Dis_Pile():temp_card(0) {}
 private:

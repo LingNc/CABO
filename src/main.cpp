@@ -1,6 +1,8 @@
 #include<iostream>
 #include"Player.h"
+#include"Circle.h"
+
 int main(){
-    int a;
+    
     return 0;
 }
