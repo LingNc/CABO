@@ -15,8 +15,8 @@ New_Pile::New_Pile():temp_card(0),max(52){
     //洗牌
     Shuffle();
 
-    //入        栈
-        int t=num;
+    //入栈
+    int t=num;
     while(t--){
         card_deck.push(new_card_deck[t]);
     }

@@ -4,6 +4,8 @@
 #include<string>
 #include<vector>
 #include"Hand_Card.h"
+#include"Card.h"
+
 class Player{
 public:
     Player(){}
