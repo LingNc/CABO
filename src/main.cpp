@@ -1,36 +1,33 @@
 #include<iostream>
 #include<cstdlib>
-#include"Circle.h"
-#include"New_Pile.h"
-#include"Dis_Pile.h"
-#include"Player.h"
-
-
+#include"Define.h"
+#include"setting.h"
+#include"page.h"
+#include"Game.h"
 int main(){
-    int n;
-    std::cout<<"input how many people:";
-    std::cin>>n;
+    //主循环
+    while(1){
+        W_clear();
 
-    Circle o;
-    while(n--){
-        system("clear");
-        if(o.num()==0){
-            std::cout<<"no player!"<<'\n';
+        print(" 1.start game\n");
+        print(" 2.rules\n");
+        print(" 3.exit\n");
+        putchar('\n');
+
+        print("inupt numbers to select: ");
+        int select;
+        std::cin>>select;
+        switch(select){
+        case 1:
+            Game();
+            break;
+        case 2:
+            rules();
+            break;
+        case 3:
+            return 0;
+            break;
         }
-        else{
-            for(int i=1;i<=o.num();i++){
-                std::cout<<"player "<<i<<':'<<o.rank(i).name()<<'\n';
-            }
-        }
-        std::cout<<"add new player:";
-        std::string name;
-        std::cin>>name;
-        o.add(name);
-    }
-    system("clear");
-    std::cout<<"Player list:\n";
-    for(int i=1;i<=o.num();i++){
-        std::cout<<"player "<<i<<':'<<o.rank(i).name()<<'\n';
     }
     return 0;
 }

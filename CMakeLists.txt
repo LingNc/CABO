@@ -7,10 +7,10 @@ project(${CMAKE_PROJECT_NAME} VERSION 0.0 LANGUAGES C CXX)
 set(CMAKE_C_STANDARD 99)
 set(CMAKE_C_STANDARD 11)
 
-include_directories(include)
+include_directories(include include/object include/function)
 #添加目标
 add_executable(${CMAKE_PROJECT_NAME})
 #CONFIGURE_DEPENDS自动更新变量
-file(GLOB SRC CONFIGURE_DEPENDS src/*.cpp)
+file(GLOB SRC CONFIGURE_DEPENDS src/*.cpp src/object/*.cpp src/function/*.cpp)
 #添加源文件到目标
 target_sources(${CMAKE_PROJECT_NAME} PUBLIC ${SRC})

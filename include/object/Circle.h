@@ -23,10 +23,12 @@ public:
     //构造函数
     Circle():
         num_player(0),
-        now_player_rank(0){}
+        now_player_rank(0)
+        //player("null")
+    {}
 private:
     std::vector<Player> arr_player;
-    //Player &temp_plr;
+    //Player player;
     int num_player;
     int now_player_rank;
 

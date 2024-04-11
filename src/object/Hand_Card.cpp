@@ -5,8 +5,8 @@ Hand_Card::Hand_Card():temp_card(0){
     max=4;
 }
 //新加手牌
-void Hand_Card::push(Card new_card){
-    C.push_back(new_card);
+void Hand_Card::addcard(Card card){
+    C.push_back(card);
     card_num=C.size();
 }
 //丢弃手牌
@@ -17,15 +17,22 @@ Card Hand_Card::discard(int rank){
     return temp_card;
 }
 //替换手牌
-Card Hand_Card::replace(int rank,Card rep_card){
+Card Hand_Card::replace(int rank,Card card){
     temp_card=C[rank-1];
-    C[rank-1]=rep_card;
+    C[rank-1]=card;
     return temp_card;
 }
-//显示手牌
+//显示rank手牌点数
 int Hand_Card::show(int rank){
-    return C[rank-1].num();
+    if(C.size()<rank)
+        return -1;
+    else
+        return C[rank-1].num();
 }
+//显示rank手牌功能
 std::string Hand_Card::show_data(int rank){
-    return C[rank-1].data();
+    if(C.size()<rank)
+        return "No Card!";
+    else
+        return C[rank-1].data();
 }
