@@ -3,7 +3,7 @@
 
 #include<string>
 #include<vector>
-#include"myinclude.h"
+#include"Declare.h"
 #include"Hand_Card.h"
 #include"Card.h"
 // #include"Circle.h"

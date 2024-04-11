@@ -1,7 +1,7 @@
 #ifndef _New_Pile_H
 #define _New_Pile_H
 
-#include"myinclude.h"
+#include"Declare.h"
 #include"Card.h"
 #include<stack>
 #include<vector>

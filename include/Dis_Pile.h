@@ -2,7 +2,7 @@
 #define _Dis_Pile_H
 
 #include<stack>
-#include"myinclude.h"
+#include"Declare.h"
 #include"Card.h"
 
 class Dis_Pile{

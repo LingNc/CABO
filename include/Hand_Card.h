@@ -2,7 +2,7 @@
 #define _Hand_Card_H
 
 #include<vector>
-#include"myinclude.h"
+#include"Declare.h"
 #include<string>
 #include"Card.h"
 

@@ -1,12 +1,13 @@
 #include"Card.h"
 //初始化构造函数
-Card::Card(int x){
+Card::Card(int x):
+    _is_front(-1),
+    card_num(x){
     if(x<=4||x==13) _data="NULL";
     else if(x<=6)   _data="FLIP";
     else if(x<=8)   _data="PEEK";
     else if(x<=10)  _data="SPY" ;
     else if(x<=12)  _data="SWAP";
-    _is_front=-1;
 }
 //翻转
 void Card::flip(Player& who){}

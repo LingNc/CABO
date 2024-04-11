@@ -5,7 +5,7 @@
 // #include"Circle.h"
 // #include"Player.h"
 #include<string>
-#include"myinclude.h"
+#include"Declare.h"
 
 class Card{
 public:
