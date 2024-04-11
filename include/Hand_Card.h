@@ -2,7 +2,10 @@
 #define _Hand_Card_H
 
 #include<vector>
+#include"myinclude.h"
+#include<string>
 #include"Card.h"
+
 class Hand_Card{
 public:
     //构造函数

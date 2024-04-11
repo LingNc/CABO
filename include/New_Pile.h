@@ -1,9 +1,12 @@
 #ifndef _New_Pile_H
 #define _New_Pile_H
 
+#include"myinclude.h"
 #include"Card.h"
 #include<stack>
 #include<vector>
+
+
 class New_Pile{
 public:
     //重置牌堆

@@ -8,6 +8,16 @@
         "*.tcc": "cpp",
         "algorithm": "cpp",
         "array": "cpp",
-        "string_view": "cpp"
+        "string_view": "cpp",
+        "iostream": "cpp",
+        "unordered_map": "cpp",
+        "memory": "cpp",
+        "optional": "cpp",
+        "fstream": "cpp",
+        "istream": "cpp",
+        "sstream": "cpp",
+        "streambuf": "cpp",
+        "functional": "cpp",
+        "tuple": "cpp"
     }
 }

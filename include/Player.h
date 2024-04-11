@@ -3,9 +3,10 @@
 
 #include<string>
 #include<vector>
+#include"myinclude.h"
 #include"Hand_Card.h"
 #include"Card.h"
-#include"Circle.h"
+// #include"Circle.h"
 
 class Player{
 public:
@@ -22,8 +23,12 @@ public:
     void Dis_Single();
 
     //显示手牌
-    int show();
-    std::string show_data();
+    int show(int x);
+    std::string show_data(int x);
+    //显示信息
+    std::string name();
+    int rank();
+    int score();
     //友元
     friend Circle;
 
@@ -35,9 +40,9 @@ private:
     Card temp_card;
 
     //信息
-    std::string name;
-    int rank;
-    int score;
+    std::string _name;
+    int _rank;
+    int _score;
     int card_num;
 
 };

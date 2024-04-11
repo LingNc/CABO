@@ -8,26 +8,40 @@ Card::Card(int x){
     else if(x<=12)  _data="SWAP";
     _is_front=-1;
 }
+//翻转
+void Card::flip(Player& who){}
+//偷看
+int Card::peek(){}
+//间谍
+int Card::spy(Player& who){}
+//交换
+void Card::swap(Player& who){}
 //发动该牌技能
 int Card::skill(Player &who){
     int res=-1;
     if(_data=="FLIP")
-        flip(who);
+        this->flip(who);
     else if(_data=="PEEK")
-        res=peek();
+        res=this->peek();
     else if(_data=="SPY")
-        res=spy(who);
+        res=this->spy(who);
     else if(_data=="SWAP")
-        swap(who);
+        this->swap(who);
     return res;
 }
 //返回牌面技能
 std::string Card::data(){
-    return _data;
+    if(_is_front)
+        return _data;
+    else
+        return "";
 }
 
 int Card::num(){
-    return card_num;
+    if(_is_front)
+        return card_num;
+    else
+        return -1;
 }
 //返回牌的状态
 bool Card::is_front(){

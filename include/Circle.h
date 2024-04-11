@@ -1,9 +1,10 @@
 #ifndef _Circle_H
 #define _Circle_H
 
-#include"Player.h"
 #include<string>
 #include<vector>
+#include"myinclude.h"
+#include"Player.h"
 
 class Circle{
 public:

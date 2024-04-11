@@ -1,9 +1,9 @@
 #include"Circle.h"
-
+#include"Player.h"
 void Circle::add(std::string name){
     arr_player.push_back(Player(name));
     int rank=arr_player.size();
-    arr_player[rank-1].rank=rank;
+    arr_player[rank-1]._rank=rank;
     num_player=rank;
 }
 int Circle::num(){

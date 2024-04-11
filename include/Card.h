@@ -1,10 +1,11 @@
 #ifndef _Card_H
 #define _Card_H
 
-#include"New_Pile.h"
-#include"Circle.h"
-#include"Player.h"
+// #include"New_Pile.h"
+// #include"Circle.h"
+// #include"Player.h"
 #include<string>
+#include"myinclude.h"
 
 class Card{
 public:
@@ -19,7 +20,7 @@ public:
     bool is_front();
     //反转牌
     void turn();
-        //声明友元函数供New_Pile访问
+    //声明友元函数供New_Pile访问
     friend New_Pile;
 private:
     std::string _data;
