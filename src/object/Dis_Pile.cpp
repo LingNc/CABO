@@ -1,8 +1,8 @@
 #include"Dis_Pile.h"
 //入牌
 void Dis_Pile::Cardin(Card dis_card){
-    if(dis_card.is_front())
-        dis_card.turn();
+    if(dis_card.is_front==false)
+        dis_card.is_front=true;
     dis_card_deck.push(dis_card);
 }
 //摸牌

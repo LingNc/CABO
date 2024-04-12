@@ -17,4 +17,5 @@ void input_new_player(Circle &o);
 //输入回车继续
 void pause(std::string out);
 
+
 #endif

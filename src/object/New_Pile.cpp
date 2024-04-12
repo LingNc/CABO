@@ -41,7 +41,7 @@ int New_Pile::size(){
 //摸出一张顶部的牌
 Card New_Pile::draw(){
     if(card_deck.empty()){
-        temp_card._data="NULL";
+        temp_card.data="NULL";
     }
     else{
         temp_card=card_deck.top();

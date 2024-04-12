@@ -27,12 +27,12 @@ int Hand_Card::show(int rank){
     if(C.size()<rank)
         return -1;
     else
-        return C[rank-1].num();
+        return C[rank-1].num;
 }
 //显示rank手牌功能
 std::string Hand_Card::show_data(int rank){
     if(C.size()<rank)
         return "No Card!";
     else
-        return C[rank-1].data();
+        return C[rank-1].data;
 }
