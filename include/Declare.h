@@ -26,9 +26,4 @@ class Player;
 class Circle;
 #endif
 
-#ifndef _Hand
-#define _Hand
-class Hand_Card;
-#endif
-
 #endif

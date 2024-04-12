@@ -4,14 +4,11 @@
 #include<string>
 #include<vector>
 #include"Declare.h"
-#include"Hand_Card.h"
 #include"Card.h"
 // #include"Circle.h"
 
 class Player{
 public:
-    //手牌区
-    Hand_Card desk;
     // //召唤卡波
     // void CABO();
 

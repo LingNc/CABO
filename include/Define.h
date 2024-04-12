@@ -18,11 +18,6 @@
     #include"New_Pile.h"
 #endif
 
-#ifndef _Hand_Card_
-    #define _Hand_Card_
-    #include"Hand_Card.h"
-#endif
-
 #ifndef _Player_
     #define _Player_
     #include"Player.h"
