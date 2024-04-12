@@ -2,8 +2,8 @@
 #define _My_H
 
 #ifndef _Card
-    #define _Card
-        class Card;
+#define _Card
+class Card;
 #endif
 
 #ifndef _Dis
@@ -24,6 +24,11 @@ class Player;
 #ifndef _Circle
 #define _Circle
 class Circle;
+#endif
+
+#ifndef _Game_Master
+#define _Game_Master
+class Game_Master;
 #endif
 
 #endif

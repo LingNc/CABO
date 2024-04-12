@@ -22,3 +22,9 @@
     #define _Player_
     #include"Player.h"
 #endif
+
+#ifndef _Game_Master
+    #define _Game_Master
+    #include"Game_Master.h"
+#endif
+
