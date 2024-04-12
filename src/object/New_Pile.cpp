@@ -31,7 +31,7 @@ void New_Pile::Shuffle(){
     for(int i=last;i>=0;i--){
         srand(time(0));
         ran=rand()%(i+1);
-        std::swap(new_card_deck[0],new_card_deck[ran]);
+        std::swap(new_card_deck[i],new_card_deck[ran]);
     }
 }
 //返回剩余牌数

@@ -34,6 +34,10 @@ public:
     // int show(int x);
     // //显示x张手牌功能
     // std::string show_data(int x);
+    //摸牌入手
+    void in_hand(Card card);
+    //弃掉手牌
+    Card out_hand();
     //显示玩家名字
     std::string name();
     //显示玩家序号
@@ -47,8 +51,8 @@ public:
     Player(std::string name);
 
 private:
-    Card temp_card;
-
+    Card now_card;
+    bool _in_hand;
     //信息
     std::string _name;
     int _rank;

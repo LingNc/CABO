@@ -1,7 +1,7 @@
 #include"Player.h"
 
 Player::Player(std::string name):
-    temp_card(0),
+    now_card(0),
     _name(name),
     _score(0),
     card_num(0){}
@@ -12,6 +12,20 @@ Player::Player(std::string name):
 // std::string Player::show_data(int x){
 //     return desk.show_data(x);
 // }
+//摸牌入手
+void Player::in_hand(Card card){
+    now_card=card;
+    _in_hand=true;
+}
+
+//弃掉手牌
+Card Player::out_hand(){
+    if(_in_hand){
+        _in_hand=false;
+        return now_card;
+    }
+
+}
 //显示信息
 std::string Player::name(){
     return _name;

@@ -1,7 +1,7 @@
 #include"Card.h"
 //初始化构造函数
 Card::Card(int x):
-    _is_front(-1),
+    _is_front(false),
     card_num(x){
     if(x<=4||x==13) _data="NULL";
     else if(x<=6)   _data="FLIP";

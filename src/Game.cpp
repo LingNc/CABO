@@ -17,7 +17,8 @@ void Game(){
     W_clear();
     show_player_list(o);
 
-    system("pause");
+    pause("enter to continue...");
+    W_clear();
 
     New_Pile newpile;
     Dis_Pile dispile;
@@ -30,7 +31,6 @@ void Game(){
         while(t--){
             o.rank(i).desk.addcard(newpile.draw());
         }
-
     }
 
 }
