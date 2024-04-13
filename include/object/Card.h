@@ -10,6 +10,8 @@ struct Card{
     int num;
     bool is_front;
     Card(int x);
+    //拷贝构造函数
+    Card(Card &other);
 };
 
 #endif

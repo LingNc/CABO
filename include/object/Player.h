@@ -5,56 +5,45 @@
 #include<vector>
 #include"Declare.h"
 #include"Card.h"
-// #include"Circle.h"
 
 class Player{
 public:
-    // //召唤卡波
-    // void CABO();
+    //构造函数
+    Player(std::string name);
 
-    // //从摸牌堆摸牌
-    // void Single_Much();
-    // void Single();
+    //召唤卡波
+    void CABO();
+    //显示手牌状态
+    void show();
 
-    // //从弃牌堆摸牌
-    // void Dis_Single_Much();
-    // void Dis_Single();
+    //在x前添加牌
+    bool add_card(int x,Card card);
+    //在x处取出牌
+    Card take_card(int x,Card card);
+    //添加一张牌
+    void push_card(Card card);
+    //反转牌面,返回状态
+    bool turn_card(int x);
+    //查看牌面
+    Card &see_card(int x);
 
-    // //放入新牌
-    // void add_card(Card card);
-    // //替换第x张牌
-    // Card replace_card(int x,Card card);
-    // //扔掉第x张牌
-    // Card throw_card(int x);
-
-    // //显示x张手牌点数
-    // int show(int x);
-    // //显示x张手牌功能
-    // std::string show_data(int x);
-    //摸牌入手
-    void in_hand(Card card);
-    //弃掉手牌
-    Card out_hand();
     //显示玩家名字
     std::string name();
     //显示玩家序号
     int rank();
     //显示玩家积分
     int score();
-
-    //友元
-    friend Circle;
-
-    Player(std::string name);
+    //显示玩家手牌数
+    int num();
 
 private:
-    Card now_card;
-    bool _in_hand;
+    //手牌组
+    std::vector<Card> _hand;
+    Card _error;
     //信息
     std::string _name;
     int _rank;
     int _score;
-    int card_num;
-
+    int _num;
 };
 #endif
