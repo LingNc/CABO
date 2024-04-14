@@ -39,6 +39,7 @@ public:
 private:
     //手牌组
     std::vector<Card> _hand;
+    //错误返回
     Card _error;
     //信息
     std::string _name;
