@@ -14,10 +14,10 @@ public:
     //显示顶部牌
     const Card &top();
     //构造函数
-    Dis_Pile():temp_card(0) {}
+    Dis_Pile():_error(-1) {}
 private:
     std::stack<Card> dis_card_deck;
-    Card temp_card;
+    const Card _error;
 
 };
 #endif

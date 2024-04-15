@@ -1,12 +1,12 @@
 #include"New_Pile.h"
 //构造函数
-New_Pile::New_Pile():temp_card(0),max(52){
+New_Pile::New_Pile():_error(-1),max(52){
     //新建一副牌
     for(int i=0;i<=13;i++){
-        Card tempcd(i);
+        Card _temp(i);
         int t=(i==0||i==13)?2:4;
         while(t--){
-            new_card_deck.push_back(tempcd);
+            new_card_deck.push_back(_temp);
         }
     }
     //个数统计
@@ -31,7 +31,7 @@ void New_Pile::Shuffle(){
     for(int i=last;i>=0;i--){
         srand(time(0));
         ran=rand()%(i+1);
-        std::swap(new_card_deck[i],new_card_deck[ran]);
+        std::iter_swap(new_card_deck.begin()+i,new_card_deck.begin()+ran);
     }
 }
 //返回剩余牌数
@@ -40,14 +40,22 @@ int New_Pile::size(){
 }
 //摸出一张顶部的牌
 Card New_Pile::draw(){
-    if(card_deck.empty()){
-        temp_card.data="NULL";
-    }
+    Card _temp(0);
+    if(card_deck.empty())
+        //返回错误
+        return _error;
     else{
-        temp_card=card_deck.top();
+        _temp=card_deck.top();
         card_deck.pop();
     }
-    return temp_card;
+    return _temp;
+}
+//是否为空
+bool New_Pile::empty(){
+    if(size())
+        return false;
+    else
+        return true;
 }
 //重置牌堆
 void New_Pile::Reset(){

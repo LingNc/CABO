@@ -7,11 +7,17 @@ void Dis_Pile::Cardin(Card dis_card){
 }
 //摸牌
 Card Dis_Pile::draw(){
-    temp_card=dis_card_deck.top();
+    if(dis_card_deck.empty())
+        //返回错误牌
+        return _error;
+    Card _temp=dis_card_deck.top();
     dis_card_deck.pop();
-    return temp_card;
+    return _temp;
 }
 //显示顶部牌
 const Card &Dis_Pile::top(){
-    return dis_card_deck.top();
+    if(dis_card_deck.empty())
+        return _error;
+    else
+        return dis_card_deck.top();
 }

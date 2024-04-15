@@ -13,6 +13,8 @@ public:
     void Reset();
     //返回剩余牌数
     int size();
+    //是否为空
+    bool empty();
     //摸出一张顶部的牌
     Card draw();
 
@@ -23,7 +25,7 @@ private:
     void Shuffle();
     std::vector<Card> new_card_deck;
     std::stack<Card> card_deck;
-    Card temp_card;
+    Card _error;
     int num;
     int max;
 };
