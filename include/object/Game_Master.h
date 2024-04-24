@@ -3,5 +3,5 @@ class Game_Master{
 public:
 
 private:
-
+    
 };
